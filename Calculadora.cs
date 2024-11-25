@@ -1,8 +1,10 @@
 using System;
 
-class Calculadora{
+class Calculadora
+{
 
-    static void Main(){
+    static void Main()
+    {
 
         while (true)
         {
@@ -15,19 +17,19 @@ class Calculadora{
             string opcion = Console.ReadLine();
             switch (opcion)
             {
-            case "1":
-                RealizarSuma();
-                break;
-            case "2":
-                CalcularFactorial();
-                break;
-            case "3":
-                Console.WriteLine("Hasta luego");
-                return;
-            default:
-                Console.WriteLine("Opción no válida. Presiona cualquier tecla para intentarlo de nuevo.");
-                Console.ReadKey();
-                break;
+                case "1":
+                    RealizarSuma();
+                    break;
+                case "2":
+                    CalcularFactorial();
+                    break;
+                case "3":
+                    Console.WriteLine("Hasta luego");
+                    return;
+                default:
+                    Console.WriteLine("Opción no válida. Presiona cualquier tecla para intentarlo de nuevo.");
+                    Console.ReadKey();
+                    break;
             }
 
         }
